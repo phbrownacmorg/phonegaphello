@@ -28,11 +28,11 @@
     </head>
     <body>
         <div class="app">
-            <h1>PhoneGap</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
-                <!--p class="event received">Device is Ready</p-->
-		<div class="event received" id="svgdiv">
+                <p class="event received">Device is Ready</p>
+            </div>
+            <div id="svgdiv">
 		  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="400" width="400" style="border: solid black" onclick="shoot(0);" id="haybale">
 		    <!-- Draw the target -->
    		    <circle id="white" cx="200" cy="200" r="90" stroke="black" stroke-width="1" fill="white" onclick="shoot(1);"/>
@@ -50,8 +50,8 @@
 		    <text x="150" y="395" id="totalLabel">Total score: 0</text>
 		    <text x="250" y="395" id="scoreLabel">This shot: 0</text>
 		  </svg>
-		</div>
-            </div>
+        </div>
+
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
