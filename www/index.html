@@ -31,7 +31,26 @@
             <h1>PhoneGap</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+                <!--p class="event received">Device is Ready</p-->
+		<div class="event received" id="svgdiv">
+		  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="400" width="400" style="border: solid black" onclick="shoot(0);" id="haybale">
+		    <!-- Draw the target -->
+   		    <circle id="white" cx="200" cy="200" r="90" stroke="black" stroke-width="1" fill="white" onclick="shoot(1);"/>
+		    <circle cx="200" cy="200" r="80" stroke="black" stroke-width="1" fill="white" onclick="shoot(2);"/>
+		    <circle id="black" cx="200" cy="200" r="70" stroke="black" stroke-width="1" fill="black" onclick="shoot(3);"/>
+		    <circle cx="200" cy="200" r="60" stroke="grey" stroke-width="1" fill="black" onclick="shoot(4);"/>
+		    <circle id="blue" cx="200" cy="200" r="50" stroke="black" stroke-width="1" fill="blue" onclick="shoot(5);"/>
+		    <circle cx="200" cy="200" r="40" stroke="black" stroke-width="1" fill="blue" onclick="shoot(6);" />
+		    <circle id="red" cx="200" cy="200" r="30" stroke="black" stroke-width="1" fill="red" onclick="shoot(7);" />
+		    <circle cx="200" cy="200" r="20" stroke="black" stroke-width="1" fill="red" onclick="shoot(8);"/>
+		    <circle id="yellow" cx="200" cy="200" r="10" stroke="black" stroke-width="1" fill="yellow" onclick="shoot(9);"/>
+		    <circle cx="200" cy="200" r="5" stroke="black" stroke-width="1" fill="yellow" onclick="shoot(10);"/>
+		    
+		    <text x="80" y="395" id="shotsLabel">Shots: 0</text>
+		    <text x="150" y="395" id="totalLabel">Total score: 0</text>
+		    <text x="250" y="395" id="scoreLabel">This shot: 0</text>
+		  </svg>
+		</div>
             </div>
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
