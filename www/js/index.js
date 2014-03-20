@@ -34,7 +34,7 @@ var app = {
     // load event handler
     onLoad: function() {
         var svgDiv = document.getElementById('svgdiv');
-        //alert(svgDiv);
+        alert(svgDiv);
         //alert(svgDiv.clientHeight+'x'+svgDiv.clientWidth+' '+svgDiv.offsetHeight+'x'+svgDiv.offsetWidth);
     },
     
