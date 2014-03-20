@@ -20,6 +20,7 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
+        this.onLoad();
     },
     // Bind Event Listeners
     //
@@ -27,7 +28,16 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('load', this.onLoad, false);
     },
+    
+    // load event handler
+    onLoad: function() {
+        var svgDiv = document.getElementById('svgdiv');
+        //alert(svgDiv);
+        //alert(svgDiv.clientHeight+'x'+svgDiv.clientWidth+' '+svgDiv.offsetHeight+'x'+svgDiv.offsetWidth);
+    },
+    
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
